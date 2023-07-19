@@ -1,0 +1,39 @@
+.book-image {
+    width: 200px;
+    height: auto;
+}
+
+.article {
+    padding: 40px 0px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 40px;
+    
+    @media (min-width: 721px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.book {
+    cursor: pointer;
+    opacity: 1;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.header {
+    color: var(--accent-color);
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 80px;
+}

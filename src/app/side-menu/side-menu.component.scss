@@ -1,0 +1,47 @@
+.backdrop {
+    background-color: #0009;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 70px;
+}
+
+.container {
+    position: fixed;
+    right: 0px;
+    z-index: 1010;
+    padding-top: 0px;
+    width: 0px;
+    height: 100vh;
+    background-color: var(--main-color);
+    transition: width 300ms;
+    top: 70px;
+    @media (min-width: 721px) {
+        padding-top: 20px;
+    }
+}
+
+.open {
+    width: 340px;
+}
+
+.menu-item {
+    font-size: 18px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    cursor: pointer;
+    outline: none;
+    color: var(--accent-color);
+    &:hover,
+    &:active {
+        background-color: var(--secondary-color);
+        color: var(--accent-color);
+    }
+}

@@ -1,0 +1,11 @@
+<div class="backdrop" (click)="close()" *ngIf="isOpen"></div>
+<div class="container" [ngClass]="{ open: isOpen }">
+    <div
+        class="menu-item"
+        (click)="close()"
+        *ngFor="let menuItem of menuItems"
+    >
+        <span style="margin: 0px 10px"></span>
+        <a>{{ menuItem.title }}</a>
+    </div>
+</div>
